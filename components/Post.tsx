@@ -5,11 +5,9 @@ export default function Post({ post }) {
     return (
         <div>
             <div className="card">
-                <Image
-                    src={post.frontmatter.cover_image}
-                    alt=""
-                    layout="fill"
-                />
+                <div className="imagewrap">
+                    <img src={post.frontmatter.cover_image} alt="" />
+                </div>
                 <div className="post-date">Posted on {post.frontmatter.date}</div>
                 <h3>{post.frontmatter.title}</h3>
                 <p>{post.frontmatter.excerpt}</p>
