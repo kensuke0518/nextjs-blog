@@ -3,8 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
-import Image from 'next/image'
-
+//import Image from 'next/image'
 
 export default function PostPage({frontmatter:{title, date, cover_image}, slug, content}) {
     return (
